@@ -18,16 +18,11 @@ database, so the queue is not lost if the power goes off.
 
 ## How it works
 1. **Check-In:** the patient starts at the welcome screen.
-2. **Register:** the patient enters their name, surname, ID number & File number if applicable.
-   The app checks that no field is empty and that the ID is exactly
-   13 digits.
-3. **Reason for visit:** the patient picks a colour-coded button with an icon.
-4. **Ticket:** the patient gets a ticket for their visit type.
-   - **General illness:** the ticket is saved to the database and the
-     number (for example G004) is generated from the saved records.
-   - **Chronic medication:** the ticket shows the patient's details and
-     file number.
-   - **Treatments:** Wound Management has its own ticket page.
+2. **Register:** name, surname and ID number (13 digits), plus an optional file number.
+3. **Reason for visit:** General Illness, Treatment or Chronic Med.
+4. **Ticket:** General Illness tickets are numbered from saved records and stored in a local SQLite database.
+
+See [docs/requirements.md](docs/requirements.md) for the full requirements and what is built so far.
 
 ## Screenshots
 ![Check-in](screenshots/checkin.png)
@@ -53,9 +48,10 @@ database, so the queue is not lost if the power goes off.
 Java, Swing, NetBeans, Maven, SQLite (JDBC)
 
 ## Future improvements
-- Save Chronic Med and Treatment tickets to the database
-- Staff screen to call the next patient
-- Remaining treatment options (only Wound Management is built)
-- Emergency fast-track
-- isiZulu language option
-- Ticket printing
+Staff screen to call the next patient
+Save Chronic Med and Treatment tickets to the database
+Show the file number on the Chronic Med ticket
+Remaining treatment options and reasons for visit
+Emergency fast-track
+isiZulu language option
+Ticket printing
