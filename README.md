@@ -2,10 +2,6 @@
 
 An offline queue management system for rural clinics, built with Java Swing and SQLite.
 
-# Why I built this 
-
-I grew up in Gcilima. When I went to the clinic, I registered in a very big paper register. A person at the front desk wrote down my name, ID number and reason for visiting. Then I sat with everyone else, who were going to different lines, watching people jump the queue and unsure which door I would be called to. This project is my attempt to make that experience faster and clearer for patients, front desk staff and nurses, with less paper, in areas where internet is unreliable.
-
 ## Demo
 [Watch the demo video](https://youtu.be/GqI43gAhr7c))
 
